@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities for Autism and Disabled Children</title>
+    <style>
+        body {
+            font-family: 'Arial',sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8da2ae;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .activity-block {
+            background-color: #e7e7e7;
+            border: 4px solid #090a0a;
+            border-radius: 2px;
+            padding: 80px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .activity-block:hover {
+            transform: scale(1.05);
+        }
+        .activity-block h3 {
+            margin: 0;
+            color: #151b19;
+            font-family: 'Verdana', cursive;
+            font-size: 30px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            background-color: rgba(241, 246, 246, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .modal-content h3 {
+            background-color: #d9e7e6;
+        }
+        .modal-content p {
+            color: #333;
+        }
+        .close-btn {
+            position: absolute;
+            top: 50px;
+            right: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #888;
+        }
+        .close-btn:hover {
+            color: #000;
+        }
+        .read-more-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 20px 30px;
+            background-color: #df2f0c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .read-more-btn:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #060707; font-family: 'Time New Roman', cursive;
+            font-size: 50px; margin: 20px 0;">Activities for Autism and Disabled Children</h1>
+    <div class="container">
+        <div class="activity-block" onclick="openModal('modal1')">
+            <h3>Art Therapy</h3>
+        </div>
+        <div class="activity-block" onclick="openModal('modal2')">
+            <h3>Music Sessions</h3>
+        </div>
+        <div class="activity-block" onclick="openModal('modal3')">
+            <h3>Interactive Storytelling</h3>
+        </div>
+        <div class="activity-block" onclick="openModal('modal4')">
+            <h3>Outdoor Play</h3>
+        </div>
+            <div class="activity-block" onclick="openModal('modal5')">
+                <h3>Yoga</h3>
+            </div>
+                <div class="activity-block" onclick="openModal('modal6')">
+                    <h3>Board Game</h3>
+                </div>
+                    
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
+            <h3>Art Therapy</h3>
+            <p>Engage children in drawing and painting to express emotions and enhance creativity.</p>
+            <a href="art-therapy.html" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
+            <h3>Music Sessions</h3>
+            <p>Use instruments and songs to promote sensory development and relaxation.</p>
+            <a href="music-sessions.html" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal3')">&times;</button>
+            <h3>Interactive Storytelling</h3>
+            <p>Encourage listening and imagination with stories and puppets.</p>
+            <a href="interactive-storytelling.html" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal4')">&times;</button>
+            <h3>Outdoor Play</h3>
+            <p>Simple games like ball toss and obstacle courses to improve motor skills.</p>
+            <a href="outdoor-play.html" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+        <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal5')">&times;</button>
+            <h3>Yoga</h3>
+            <p>Yoga enhance flexibility,strenght and mental clarity.</p>
+            <a href="yoga.html" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal6')">&times;</button>
+            <h3>Board Game</h3>
+            <p>Board game support social skils,communication,and coginitive development in children.</p>
+            <a href="Board-Game" class="read-more-btn">Read More</a>
+        </div>
+    </div>
+    
+
+    <script>
+        // Function to open a modal
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        // Function to close a modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
