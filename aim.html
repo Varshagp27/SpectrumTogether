@@ -9,14 +9,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f7fa;
+            background-color:#f5f7fa;
             margin: 0;
             padding: 0;
             text-align: center;
             color: #333;
+            font-size: 16px;
         }
         header {
-            background-color: #29a09a;
+            background-color: #95bad9;
             color: white;
             padding: 20px 20px;
         }
@@ -30,19 +31,35 @@
             padding: 20px;
             margin: 40px auto;
             max-width: 800px;
-            background-color: #ffffff;
+            background-color: #ffffffba;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 2px solid #2d7b9d;
         }
+        .next-button {
+            margin-top: 50px;
+            background-color: #8e24aa;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .next-button:hover {
+            background-color: #9a1b92;
+        }
         p {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.6;
             margin: 20px auto;
             width: 80%;
         }
+        
+
         footer {
-            background-color: #333;
+            background-color: #120d13;
             color: white;
             padding: 10px;
             font-size: 14px;
@@ -51,12 +68,106 @@
             bottom: 0;
             text-align: center;
         }
+        .zigzag-image {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            z-index: 1;
+        }
+
+        .zigzag-left {
+            left: 50px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-15deg);
+        }
+
+        .zigzag-right {
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%) rotate(15deg);
+        }
+        
+       
+        /* For spacing */
+        .zigzag-left, .zigzag-right {
+            top: 60%;
+            animation: moveZigzag 6s infinite alternate;
+        }
+
+        @keyframes moveZigzag {
+            0% {
+                top: 40%;
+            }
+            50% {
+                top: 65%;
+            }
+            100% {
+                top: 40%;
+            }
+        }
+        .font-size-buttons {
+            margin-top: 30px;
+        }
+        .font-size-buttons button {
+            background-color: #29a09a;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .font-size-buttons button:hover {
+            background-color: #2d7b9d;
+        }
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #222a2a;
+            color: white;
+            padding: 20px 20px;
+            border: none;
+            border-radius: 50%;
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+            z-index: 10;
+        }
+        #scrollTopBtn:hover {
+            background-color: #121c21;
+        }
+        .social-icons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            z-index: 10;
+        }
+
+        .social-icons i {
+            font-size: 30px;
+            color: #29a09a;
+            margin: 10px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #342331;
+        }
+
+       
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Our Goals</h1>
+    <h1> ⭐ Our Goals ⭐</h1>
 </header>
 
 <section>
@@ -102,9 +213,24 @@
     <p><strong>Interactive Tools</strong>: Font size adjustments, text-to-speech, and multilingual content for diverse audiences
     </p>
 </section>
+<div class="font-size-buttons">
+    <button onclick="increaseFontSize()">Increase Font Size</button>
+    <button onclick="decreaseFontSize()">Decrease Font Size</button>
+</div>
+<div class="social-icons">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+</div>
+
+<img src="images/tink1.jpg" class="zigzag-image zigzag-left">
+<img src="images/tink3.jpg" alt="Zigzag Image Right" class="zigzag-image zigzag-right">
+
 
 <!-- Previous Button to navigate back to the home page -->
 <a href="index.html"><button class="next-button"><i class="fas fa-arrow-left"></i> Previous</button></a>
+<a href="aim.html"><button class="next-button"><i class="fas fa-arrow-right"></i> Next</button></a>
 
 
 </body>
