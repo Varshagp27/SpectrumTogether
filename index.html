@@ -169,18 +169,22 @@
 
 <section>
     <p>Welcome to <strong>Spectrum Together</strong>, a place where we unite to support individuals with autism, disabilities, along with their families. Our mission is to create a caring community, offer resources, and provide assistance that promotes inclusion, independence, and emotional well-being.</p>
-    <p>We are affliated to <strong>Department of Empowerment of Persons with Disabilities</strong>which works as the governmental level to ensure the rights of people with disabilities are protected.. </p>
+    <p>We are affliated to <strong>Department of Empowerment of Persons with Disabilities</strong> which works as the governmental level to ensure the rights of people with disabilities are protected.. </p>
 </section>
 
 <section class="images-container">
     <img src="images/handin.png">
     <img src="images/infini.jpg">
-    <img src="images/aut.jpg">
+    <img src="images/auti.webp">
 </section>
 
 <!-- Next Button to navigate to the next page -->
 <a href="aim.html"><button class="next-button"><i class="fas fa-arrow-right"></i> Next</button></a>
 <button class="live-chat-button">
+    <i class="fas fa-comments"></i>
+</button>
+<!-- Live Chat Button -->
+<button class="live-chat-button" onclick="openChat()">
     <i class="fas fa-comments"></i>
 </button>
 <!-- Chat Modal -->
@@ -189,7 +193,23 @@
     <textarea placeholder="Type your message..."></textarea>
     <button class="close-btn" onclick="closeChat()">Close</button>
 </div>
+
 <script>
+    // Function for the search bar
+    function searchContent() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const paragraphs = document.querySelectorAll('section p');
+        
+        paragraphs.forEach(p => {
+            const text = p.textContent.toLowerCase();
+            if (text.includes(query)) {
+                p.style.display = 'block';
+            } else {
+                p.style.display = 'none';
+            }
+        });
+    }
+
     // Open the chat modal
     function openChat() {
         document.getElementById("chatModal").style.display = "block";
