@@ -77,8 +77,8 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://www.loom.com/share/5e5d5c374b3044dc951b8ddbc0d02b05?sid=4213725b-1264-4ecd-b87b-ab90a968f036
+*Explain what Spectrum Together website is made for and its whole theme and goal is delivered in this video
 
 # Additional Demos
 [Add any extra demo materials/links]
