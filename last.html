@@ -33,6 +33,25 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .button-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .next-button, .prev-button {
+            margin: 10px;
+            background-color: #8e24aa;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .next-button:hover, .prev-button:hover {
+            background-color: #9a1b92;
+        }
+        
         .thank-you-message {
             font-size: 24px;
             color: #0c4f7b;
@@ -50,6 +69,11 @@
         <h1 class="thank-you-message">Thank You for Visiting Our Website!</h1>
         <p class="contact-info">If you have any questions or need assistance, please feel free to reach out to us.</p>
     </main>
+    <div class="button-container">
+        <a href="therapy.html">
+            <button class="prev-button"><i class="fas fa-arrow-left"></i> Previous</button>
+        </a>
+        </div>
     <footer>
         <p>Contact Us:</p>
         <p>Email: <a href="spectrumtogether@gmail.com">spectrumtogether@gmail.com</a></p>

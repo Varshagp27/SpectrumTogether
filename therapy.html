@@ -9,19 +9,38 @@
             font-family:Arial,  sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #5a7e8a;
+            background-color: #f5fdff;
         }
         h1, h2 {
             text-align: center;
             color: #333;
         }
         section {
-            background-color: #f0d3d3;
+            background-color: #dccece;
             margin: 10px 0;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .button-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .next-button, .prev-button {
+            margin: 10px;
+            background-color: #8e24aa;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .next-button:hover, .prev-button:hover {
+            background-color: #9a1b92;
+        }
+        
         .block-container {
             display: flex;
             justify-content: space-around;
@@ -29,7 +48,7 @@
             gap: 20px;
         }
         .block {
-            background-color: #0b437b;
+            background-color: #4b88c6;
             color: white;
             width: 250px;
             height: 150px;
@@ -87,6 +106,14 @@
         <div class="block-container">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCbEmuE8AQx9zqaMSi4qPWVZdSd7OT4dniTaZV3xCQ57feCg/viewform?usp=header" class="block" target="_blank">
                 <p>Submit a Review</p>
+            </a>
+        </div>
+        <div class="button-container">
+            <a href="tink.html">
+                <button class="prev-button"><i class="fas fa-arrow-left"></i> Previous</button>
+            </a>
+            <a href="last.html">
+                <button class="next-button"><i class="fas fa-arrow-right"></i> Next</button>
             </a>
         </div>
     </section>
