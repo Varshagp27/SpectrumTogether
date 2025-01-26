@@ -29,14 +29,6 @@ For Software:
 - Bootstrap
 - VS Code,Canva,Vercel
 
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
 ### Project Documentation
 For Software:
 
@@ -53,40 +45,10 @@ For Software:
 *it shows other resources available to parents also
 
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Team](Add photo of your team here)
-
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
 ### Project Demo
 # Video
 https://www.loom.com/share/5e5d5c374b3044dc951b8ddbc0d02b05?sid=4213725b-1264-4ecd-b87b-ab90a968f036
 *Explain what Spectrum Together website is made for and its whole theme and goal is delivered in this video
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub
