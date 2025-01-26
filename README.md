@@ -1,39 +1,33 @@
-# [Project Name] 🎯
+# Spectrum Together 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: CELESTIA
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Varsha G - LBSITW
+- Member 2: Sreya Sajeev - LBSITW
+- Member 3: Nikhi Krishna S - LBSITW
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://spectrum-together.vercel.app/index.html
 
 ### Project Description
-[2-3 lines about what your project does]
+Spectrum Together is a warm, supportive space created for children with autism and disabilities, and their families. We understand the unique challenges that come with raising a child with special needs, and we're here to offer resources, guidance, and a caring community to walk alongside you.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+Its described as addressing the widespread lack of understanding and accessibility for children with autism and disabilities, as well as their families. It’s like tackling the misconception that these children and their needs should be "fixed" rather than embraced and supported.
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+ The website aims to break down barriers, offering real solutions and community support for something as simple as understanding and connecting with one another—turning complex challenges into shared, manageable experiences.The solution provided by Spectrum Together is creating a safe, supportive, and informative space that empowers both children with autism and disabilities, and their parents.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- HTML,CSS
+- Bootstrap
+- VS Code,Canva,Vercel
 
 ### Implementation
 For Software:
@@ -47,18 +41,17 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![first template](https://github.com/user-attachments/assets/017485b0-92eb-4d4d-a3b3-922e233ddc30)
+*it introduces you to website Spectrum Together's first page with its logo and objectives
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![second template](https://github.com/user-attachments/assets/f05540a8-efae-4e01-a046-6184cc016354)
+*It shows the activities used to develop the community of this site
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+
+!![third template](https://github.com/user-attachments/assets/b067a23c-829c-4bed-a308-e5203b3aa1cb)
+*it shows other resources available to parents also
+
 
 For Hardware:
 
